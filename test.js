@@ -17,12 +17,15 @@ let subjects = ["HTML","CSS","Bootstrap","JavaScript"]
 console.log("\n");
 
 //manuallay printing
-console.log("Student Information:");
-console.log("Student's name is:     "+student.firstName+' '+student.lastName)
-console.log("Student's roll no. is: "+student.rollNo)
-console.log("Student age is:        "+student.age)
-console.log("City:                  "+student.city)
-console.log("Institute:             "+student.institute)
+
+// used template literals to avoid complexity
+
+console.log("Student's Information:");
+console.log(`Student's name is:     ${student.firstName} ${student.lastName}`)
+console.log(`Student's roll no. is: ${student.rollNo}`)
+console.log(`Student's age is:      ${student.age}`)
+console.log(`Student's city is:     ${student.city}`);
+console.log(`Student's institute is:${student.institute}`);
 
 console.log("\n")
 
