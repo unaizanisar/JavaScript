@@ -1,0 +1,58 @@
+JAVASCRIPT ARRAYS
+In JS, everything is an object, so an array is also an object in js, (dot notation)
+
+Why do we need arrays? 
+For Example, if we want to store fruits:
+let fruit1 = "apple"
+let fruit2 = "banana"
+.
+.
+.
+let fruit5 = "mango"
+
+Here, we declared and initialized one by one. This is not the efficient way. Arrays provide us the efficient way i.e declare and initialize one time and store the variables in it.
+Array takes the contiguous memory location.
+In above example, fruits are scattered at different memory locations, but using arrays, they are stored in contiguous memory locations. 
+let fruits = ["apple","mango","orange"]
+console.log(fruits) //this will call the array and print all the elements of the array!
+
+But if we want to print only one fruit
+Array indexing:
+let fruits = {
+    "0" : "apple",
+    "1" : "mango",
+    "2" : "orange"
+}
+console.log(fruits['2'])
+
+Multi Type array:
+let multiDyn = [
+    "apple",
+    {
+        name = "banana",
+        age = 2
+    },
+    "mango",
+    {
+        name="orange",
+        age=3
+    },
+]
+
+console.log(fruits.length)
+
+INSERTION AND DELETION IN ARRAY:
+fruits.push("grapes") //will insert the values at the end 
+
+let lastElement = fruits.pop();
+console.log(lastElement)
+
+for start elements:
+let firstElement = fruits.shift();
+console.log(firstElement) //deleting elements from the start
+
+unshift takes a parameter //add element to the start
+fruits.unshift("kiwi")
+console.log(fruits)
+
+Insertion and Deletion at any index in an array is using splice and slice

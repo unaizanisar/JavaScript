@@ -1,0 +1,45 @@
+MUTATION IN JS: Change in the original code or data is known as mutation.
+primitive don't have Mutation
+non primitive have Mutation ()
+
+What is prototype? //imp interview question
+Mechanism through which inheritance is done in JS
+
+2 ways to make an object: object literal and using a new Object() keyword
+
+JS ARRAY METHODS:
+MAP:
+Map method makes the changes in the array and returns a new array. It doesn't change the existing array instead it changes the array and returns a new array.
+For Example: you have an array a = [1,2,3,4,5] and you want to multiply all the numbers in an array by 10, i.e [10,20,30,40,50]
+Changes are made on the first array and it will return new array.
+a.map(function(){
+    statement;
+});
+We do not use map for printing as we already have so many other methods for printing, we use map method to make changes in an array.
+
+
+REDUCE:
+Array Reduce method runs a function on each array element and reduce it to a single value.
+Runs from left to right and it doesn't reduce the original array i.e it returns a new array.
+For Example, if we want to take the sum of an array, by using reduce method, it will return the sum i.e a single value.
+
+
+SOME:
+Some method checks if the elements in an array pass the given test function. For Example, you have an array of ages and you want to check that if any of the array element is greater than 18 or not.
+You can also do this by using for loop and if else statements but that would be lengthy.
+It will return either true or false. If any of the element passes the test, then it will return true.
+
+
+EVERY:
+Every also works like some method but it checks each element, every element should pass the test function. If any one of the element is not passing the test function then it will return false. It will return true only when all the elements pass the test function.
+
+
+FIND:
+It is a strict check, i.e it returns the value of the first element in an array that pass the test. 
+For example, if we have 3 boys of the same name ali in an array and we make a function to check if ali name boy is present in the array or not, then it will return true for the first ali it found first in an array and do not check the further array.
+
+
+FILTER:
+It will creates an array filled with all the elements that will pass the test function and discard all the other elements.
+----------------------------------------------------------------------------------------------------------------------------
+
