@@ -1,0 +1,49 @@
+Feb 17, 2024 SATURDAY
+Form using JS with regx.
+How to Debug? How to use chrome devtools to debug your JS code.
+Local Storage or Session Storage (Transferring Data from one page to another or from one module to another).
+Fetch Method and other methods to play with data on "www".
+
+1. Forms:
+You can have many buttons in a form, but submit button is only one.
+-> user input means request, and from input means form control.
+
+<form onsubmit = "submitValues()" return false> //return false to prevent reloading.
+<input type = "text" value = 10>
+<button type="button">Get Color</button>
+<button type="submit">Submit</button>
+</form>
+ const submitValues = () => {
+    try{
+        const getValue =  document.getElementById('.input').value;
+        console.log(getValue)
+    } catch(error){
+        console.log(error)
+    }
+ }
+
+We have to use Asynchronous way.
+Angular by default uses AJAX (Asynchronous JavaScript And XML)
+
+Synchronous vs Asynchronous:
+Synchronous means you can't do any other work, until one is completed.
+Asynchronous means you do not need to wait/stop for the other tasks to be completed. (Node JS)
+
+<form onsubmit = "submitValues()" return false formGroup> //this is a declarative way. Angular will make it non reloading by just using formGroup
+<input type = "text" value = 10>
+<button type="button">Get Color</button>
+<button type="submit">Submit</button>
+</form>
+
+value is used with only html form tags and not with any other tag, so we use data-value
+
+2. Debugger Tool:
+To solve Logical Errors.
+Element, Console, Source
+
+3. JavaScript Regular Expressions:
+A regular expression is a sequence of characters that forms a search pattern.
+When you search for data in a text, you can use this search pattern to describe what you are searching for.
+A regular expression can be a single character, or a more complicated pattern.
+Regular expressions can be used to perform all types of text search and text replace operations.
+
